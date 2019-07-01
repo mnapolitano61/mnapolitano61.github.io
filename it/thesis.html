@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="../mycss/menu&footer.css">
+        <link rel="stylesheet" href="../mycss/thesis.css">
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+
+
+        <title>MN</title>
+
+
+
+
+
+</head>
+
+
+<body>
+
+
+        <div class="jumbotron text-center animGradient " style="margin-bottom:0; border-radius: 0px;">
+                <span class="mytext1 ">Benvenuto </span>
+                <span class="mytext2"> Piacere, Maddalena </span>
+        </div>
+
+
+
+        <!----------------------------------------------------------------MENU---------------------------------------------------------------->
+        <nav class="navbar navbar-expand-sm navbar-dark ">
+
+
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <div class="container_icon_menu navbar-toggler" onclick="myFunction(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                        </div>
+
+                        <script>
+                                function myFunction(x) {
+                                        x.classList.toggle("change");
+                                }
+                        </script>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar">
+
+                        <ul class="navbar-nav justify-content-center">
+
+
+                                <li class="nav-item dropdown">
+                                        <div id="main" class="nav-link textback">
+
+                                                <span style="cursor:pointer;" onclick="openNav()" class="nav-link"
+                                                        data-toggle="dropdown" role="button " aria-haspopup="true"
+                                                        aria-expanded="false">&#9776; Menu</span>
+
+                                                <div id="mySidenav_MENU" class="sidenav dropdown-menu dropdown-menu_UP"
+                                                        onclick="closeNav()">
+
+                                                        <a class="dropdown-item" href="#developers">Developers</a>
+                                                        <a class="dropdown-item" href="#div_description">Description</a>
+                                                        <a class="dropdown-item"
+                                                                href="#div_caratteristiche">Caratteristiche</a>
+                                                        <a class="dropdown-item" href="#Design">Design</a>
+                                                        <a class="dropdown-item" href="#particleSys">Particle system</a>
+                                                </div>
+                                        </div>
+                                </li>
+
+
+                               
+                                <li class="nav-item ">
+                                        <a class="nav-link textback" href="home.html">Home</a>
+                                </li>
+
+
+                                <li class="nav-item ">
+                                        <a class="nav-link textback" href="../index.html">Lingua</a>
+                                </li>
+
+
+                                <li class="nav-item dropdown ">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                                role="button" aria-haspopup="true" aria-expanded="false">Progetti</a>
+                                        <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="home.html#university_Projects">Progetti
+                                                        universitari</a>
+
+                                                <!--------------->
+                                                <button class="dropdown-item" onclick="on()">Progetto tesi</button>
+                                                <!--------------->
+                                                <div class="dropdown-divider"></div>
+
+                                                <a class="dropdown-item" href="works.html">Lavori personali</a>
+                                        </div>
+                                </li>
+
+
+                                <li class="nav-item ">
+                                        <a class="nav-link textback" href="../Resume_MaddalenaNapolitano.pdf"
+                                                target="_blanck"> CV
+                                        </a>
+                                </li>
+
+
+                                <li class="nav-item ">
+                                        <a class="nav-link class_contactME" href="#contactME">Contact me</a>
+                                </li>
+
+
+                        </ul>
+                </div>
+        </nav>
+        <!----------------------------------------------------------------END MENU---------------------------------------------------------->
+
+
+
+        <div class="container justify-content-center text-center max-container">
+
+                <!---------- OVERLAY FULL SCREEN ---------->
+                <div id="overlay" onclick="off()">
+                        <span class="close">&times;</span>
+                        <a class="gradientButton" href="thesis.html">Vedi</a>
+
+                </div>
+
+                <!---------- OVERLAY FULL SCREEN ---------->
+
+                <!--------------- small menu -------------->
+
+                <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#developers">Sviluppatori</a>
+                        <a href="#div_description">Descrizione</a>
+                        <a href="#div_caratteristiche">Caratteristiche</a>
+                        <a href="#Design">Design</a>
+                        <a href="#particleSys">Particle system</a>
+                </div>
+
+
+
+                <!-------------------- SCRIPT SMALL MENU ---------------------->
+                <script>
+                        function openNav() {
+                                if ($(window).width() > 900) {
+                                        document.getElementById("mySidenav").style.width = "15%";
+                                        document.getElementById("mySidenav_MENU").style.width = "0";
+                                        //document.getElementById("main").style.marginLeft = "250px";
+                                }
+                                if ($(window).width() < 900 && $(window).width() > 780) {
+                                        document.getElementById("mySidenav_MENU").style.width = "0";
+                                        document.getElementById("mySidenav").style.width = "100%";
+                                        document.getElementById("titoloDT").style.paddingTop = "45%";
+                                }
+                                if ($(window).width() < 780 && $(window).width() > 575) {
+                                        document.getElementById("mySidenav_MENU").style.width = "0";
+                                        document.getElementById("mySidenav").style.width = "100%";
+                                        document.getElementById("titoloDT").style.paddingTop = "60%";
+                                }
+                                if ($(window).width() < 575) {
+                                        document.getElementById("mySidenav_MENU").style.width = "100%";
+                                        document.getElementById("mySidenav").style.width = "0";
+                                }
+                        }
+
+                        function closeNav() {
+                                if ($(window).width() > 900) {
+                                        document.getElementById("mySidenav").style.width = "0";
+                                        //document.getElementById("main").style.marginLeft= "0";
+                                }
+                                if ($(window).width() < 576) {
+                                        document.getElementById("mySidenav_MENU").style.width = "0";
+                                }
+                                if ($(window).width() < 900 && $(window).width() > 780) {
+                                        document.getElementById("mySidenav").style.width = "0";
+                                        document.getElementById("titoloDT").style.paddingTop = "10%";
+
+                                }
+                        }
+                </script>
+                <!-------------------- END SCRIPT SMALL MENU ---------------------->
+                <!--------------- end small menu -------------->
+
+
+
+
+                <h1 id="titoloDT" class="text-center paddingTOP"> Dungeon Tool </h1>
+
+                <div class="row justify-content-center text-center noMarginTop">
+
+
+                        <!------------------------------------ CAROUSEL ------------------------------------------>
+                        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+
+
+                                        <ol class="carousel-indicators">
+                                                <li data-target="#carouselIndicators" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                                                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+
+                                        </ol>
+                                        <div class="carousel-inner">
+                                                <div class="carousel-item active" >
+                                                        <img src="../images/thesis/gif/1.gif" class="d-block w-100"
+                                                                alt="Gif 1">
+                                                </div>
+
+
+                                                <div class="carousel-item " >
+                                                        <img src="../images/thesis/gif/2.gif" class="d-block w-100"
+                                                                alt="Gif 3">
+                                                </div>
+
+
+                                                <div class="carousel-item" >
+                                                        <img src="../images/thesis/gif/moovecamera.gif"
+                                                                class="d-block w-100" alt="Gif move camera">
+                                                </div>
+                                                <div class="carousel-item" >
+                                                        <img src="../images/thesis/gif/movimento.gif"
+                                                                class="d-block w-100" alt="Gif movement">
+                                                </div>
+
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselIndicators" role="button"
+                                                data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselIndicators" role="button"
+                                                data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                        </a>
+
+                                </div>
+                                <!--END CAROUSEL-->
+
+
+
+
+                        <!---------------------------------------------------------SCRIPT CAROUSEL------------------------------------------------------->
+                        <script>
+                                $('.carousel').carousel({
+                                        interval: 8000
+                                })
+                        </script>
+
+                        <!------------------------------------ END CAROUSEL ------------------------------------------>
+
+
+                        <!------------------------------------ DEVELOPERS ------------------------------------------>
+
+                        <h2 id="titolo" class="text-center">Sviluppatori</h2>
+
+                        <div class="card" id="developers">
+
+                                <img src="../images/grad_mp.jpg" alt="Maurizio Peluso" style="width:100%">
+                                <h1 class="nameCard">Maurizio Peluso</h1>
+                                <p class="titleCard">Creator, Programmer</p>
+                                <p class="textCard">Univerista&#769; degli studi di Salerno</p>
+
+                                <!--
+                                <div class="card_icon">
+                                        <a class="aCard" href="#"><i class="fa fa-github-alt"></i></a>
+                                        <a class="aCard" href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a class="aCard" href="#"><i class="fa fa-facebook"></i></a>
+                                        <button class="aCard email-card" type="button" data-toggle="collapse"
+                                                data-target="#collapseEmailMP" aria-expanded="false"
+                                                aria-controls="collapseEmailMP">
+                                                <i class="fa fa-at"></i>
+                                        </button>
+                                        <div class="collapse" id="collapseEmailMP">
+
+                                                metti email
+                                        </div>
+
+                                </div>
+                                -->
+                                <a class="buttonCard a_Thesis" href="https://zimmabue.github.io/"> Contact </a>
+                        </div>
+                        <!--END CARD-->
+
+
+                        <div class="card">
+                                <img src="../images/grad_mn.jpg" alt="Maddalena Napolitano" style="width:100%">
+                                <h1 class="nameCard">Maddalena Napolitano</h1>
+                                <p class="titleCard">Designer, Programmer</p>
+                                <p class="textCard">Univerista&#769; degli studi di Salerno</p>
+                                <!--
+                                <div class="card_icon">
+                                        <a class="aCard" href="#"><i class="fa fa-github-alt"></i></a>
+                                        <a class="aCard" href="#"><i class="fa fa-linkedin"></i></a>
+                                        <a class="aCard" href="#"><i class="fa fa-facebook"></i></a>
+                                        <button class="aCard email-card" type="button" data-toggle="collapse"
+                                                data-target="#collapseEmailMN" aria-expanded="false"
+                                                aria-controls="collapseEmailMN">
+                                                <i class="fa fa-at"></i>
+                                        </button>
+                                        <div class="collapse" id="collapseEmailMN">
+
+                                                napolitano.maddalena@hotmail.com
+                                        </div>
+                                </div>
+                                -->
+                                <a class="buttonCard a_Thesis" href="#contactME"> Contact </a>
+                        </div>
+                        <!--END CARD-->
+
+                </div>
+                <!--END FIRST ROW-->
+
+                <!------------------------------------ END DEVELOPERS ------------------------------------------>
+
+
+                <!------------------------------------ DESCRIPTION ------------------------------------------>
+                <div class="row justify-content-center text-center" id="div_description">
+
+                        <h2 id="titolo" class="text-center">Descrizione</h2>
+
+                        <div class="col-6">
+                                <p class="text_thesis">
+                                        Come lavoro di tesi e&#769; stato sviluppato il "Dungeon Tool" : un tool di supporto
+                                        per il gioco di ruolo D&amp;D (Dungeons &amp; Dragons).
+                                        Il Dungeon Tool facilita l'esperianza di gioco e permette ai giocatori di avere
+                                        gli elementi di base per poter giocare a D&amp;D.
+
+
+
+
+
+                                        <br>
+
+                                        Linguaggio di programmazione : <img id="logo_C" src="../images/cScarp.png"
+                                                class="figure-img img-fluid " alt="logo_C#">
+                                </p>
+                        </div>
+                        <!--END col-6-->
+
+                        <div class="col-4">
+                                <h3 id="titolo" class="text-center">Tools</h3>
+
+
+                                <img id="logo_Unity" src="../images/unity.png" class="figure-img img-fluid "
+                                        alt="logo_Unity">
+
+
+                                <img id="logo_VisualStudio" src="../images/visualStudio.png"
+                                        class="figure-img img-fluid" alt="logo_VisualStudio">
+
+                                <img id="logo_GIMP" src="../images/gimp.png" class="figure-img img-fluid "
+                                        alt="logo_GIMP">
+
+                                <img id="logo_INKSCAPE" src="../images/inkscape.png" class="figure-img img-fluid "
+                                        alt="logo_INKSCAPE">
+                        </div>
+                        <!--END col-4-->
+                </div>
+                <!--END 2 ROW-->
+                <!------------------------------------ END DESCRIPTION ------------------------------------------>
+
+
+                <!------------------------------------ CARATTERISTICHE ------------------------------------------>
+
+
+
+                <div class="row justify-content-center text-center" id="div_caratteristiche">
+                        <h2 id="titolo" class="text-center">Caratteristiche</h2>
+
+
+                        <div class="tab">
+                                <button class="tablinks" onclick="openProperty(event, 'multiplayerANDarchitettura')"
+                                        id="defaultOpen">Multiplayer e architettura.</button>
+                                <button class="tablinks" onclick="openProperty(event, 'sessionGame')">Sessione di
+                                        gioco</button>
+                                <button class="tablinks" onclick="openProperty(event, 'structurGame')">Struttura del
+                                        gioco</button>
+                                <button class="tablinks" onclick="openProperty(event, 'gamePlay')">Regole e
+                                        GamePlay</button>
+                        </div>
+                        <!--END tab-->
+
+                        <div id="multiplayerANDarchitettura" class="tabcontent">
+                                <h4>Multiplayer e architettura.</h4>
+                                <p class="text_thesis">
+                                        E&#769; stato usato il Networking di Unity per la gestione della rete. E&#769;
+                                        stato fatto con la componente Network Manager.
+                                </p>
+                                <p class="text_thesis">Architettura client / server dove il DM e&#769; l'host e i PG
+                                        sono i client.
+                                </p>
+                        </div>
+
+                        <div id="sessionGame" class="tabcontent">
+                                <h4>Sessione del gioco</h4>
+                                <p class="text_thesis">
+                                        Il Dungeon Tool e&#769; un gioco multiplayer in LAN.
+
+                                        L'host e&#769; il DM che crea una nuova sessione di gioco e i client (PG) si
+                                        connettono ad esso.
+
+                                        Tutti i giocatori hanno la stessa visione del mondo, ogni cambiamento viene
+                                        visto in tempo reale.
+
+                                        Disconnessione giocatore: il personaggio resta nella scena.
+                                        Se il PG si riconnette, ha di nuovo il controllo del suo personaggio.
+
+                                        Fine del gioco: viene deciso dal DM.
+
+
+
+                                </p>
+                        </div>
+
+                        <div id="structurGame" class="tabcontent">
+                                <h4>Struttura del gioco</h4>
+                                <p class="text_thesis">
+                                        Tutti i giocatori hanno un proprio personaggio PG (Personaggio Giocante) e tutti
+                                        sono situati
+                                        in un mondo fantasy crato dal DM (Dungeon Master).
+                                        Il DM decidera&#769; le regole e controlla il gioco.
+                                        I giocatori possono creare il personaggio attraverso la seguente form:
+
+                                        <img src="../images/thesis/creaPersonaggio.PNG"
+                                                class="figure-img img-fluid menu" id="game_img" alt="Create Character">
+                                        Ogni personaggio ha un turno di gioco e viene gestito dal sistema.
+
+
+                                </p>
+                        </div>
+
+
+                        <div id="gamePlay" class="tabcontent">
+                                <h4>Regole e
+                                        GamePlay</h4>
+                                <p class="text_thesis">
+                                        Le regole sono le stesse di D&amp;D.
+                                        Il DM gestisce tutto, infatti lui ha il controllo del gioco, per esempio
+                                        puo&#769; muovere i personaggio dei giocatori nella mappa.
+
+                                </p>
+                        </div>
+
+                </div>
+                <!--END 3 ROW-->
+
+                <!------------------------------------ END CARATTERISTICHE ------------------------------------------>
+
+
+
+
+                <!------------------------------------ DESIGN ------------------------------------------>
+                <div class="row justify-content-center text-center" id="Design">
+
+
+                        <h2 id="titoloDesign" class="text-center">Design</h2>
+
+
+                        <p class="text_thesis">
+                                Ci sono 3 scene principali con un'interfaccia semplice e user-friendly.
+
+                        </p>
+
+
+                        <!----------------------------------- MENU -------------------------------------->
+
+                        <div class="row justify-content-center text-center dettagli">
+
+                                <div class="col-6 design_IMG">
+                                        <figure class="figure">
+                                                <img src="../images/thesis/menuPrincipale.PNG"
+                                                        class="figure-img img-fluid menu" id="MenuPrincipale_img"
+                                                        alt="Menu">
+                                                <figcaption class="figure-caption">Menu.</figcaption>
+                                        </figure>
+                                </div>
+                                <!--END col-6-->
+
+
+
+                                <div class="col-4 designDettagli">
+                                        <button type="button" class="btn_collapse btn_arrow" data-toggle="collapse"
+                                                data-target="#MenuPrincipale" aria-expanded="false">
+                                                <span> Vedi </span>
+                                        </button>
+
+                                        <div class="collapse" id="MenuPrincipale">
+
+                                                <p class="text_thesis text_dettagli">
+                                                        L'immagine del drago e&#769; stata disegnata con GIMP. In alto a
+                                                        destra c'e&#769;
+                                                        il titolo del gioco e sotto c'e&#769; l'indirizzo IP della
+                                                        macchina.
+                                                        L'utente puo&#769; scegliere tra due tipi di personaggio:
+
+
+                                                        <ul class="listMenu">
+                                                                <li class="text_thesis">DM - Dungeon Master</li>
+                                                                <li class="text_thesis">PG - Personaggio Giocante</li>
+                                                        </ul>
+                                                </p>
+                                                <p class="text_thesis text_dettagli">
+                                                        L'utente puo&#769; scegliere tra due tipi di personaggio e dopo
+                                                        verra&#769; mostrato il menu.
+
+                                                </p>
+
+
+                                                <div class="col">
+                                                        <figure class="figure">
+                                                                <img src="../images/thesis/menuDungeonMaster.PNG"
+                                                                        class="figure-img img-fluid img_DM_menu"
+                                                                        id="MenuDM_img" alt="Menu">
+                                                                <figcaption class="figure-caption">Menu DM.</figcaption>
+                                                        </figure>
+                                                </div>
+                                                <!--END col-->
+
+
+                                                <div class="col">
+                                                        <figure class="figure">
+                                                                <img src="../images/thesis/menuPlayer.PNG"
+                                                                        class="figure-img img-fluid img_PG_menu"
+                                                                        id="MenuPG_img" alt="Menu">
+                                                                <figcaption class="figure-caption">Menu PG.</figcaption>
+                                                        </figure>
+                                                </div>
+                                                <!--END col-->
+                                        </div>
+                                        <!--END collapse-->
+                                </div>
+                                <!--END col-4-->
+                        </div>
+                        <!--END ROW MENU-->
+
+                        <!----------------------------------- END MENU -------------------------------------->
+
+                        <!---------------------------------------- CREAZIONE MAPPA ------------------------------------------->
+
+                        <div class="row justify-content-center text-center dettagli">
+
+                                <div class="col-6 design_IMG">
+                                        <figure class="figure">
+                                                <img src="../images/thesis/gif/creaPartita.gif" class="d-block w-100" alt="Gif 2">
+
+                                                <figcaption class="figure-caption">Creazione della mappa.</figcaption>
+                                        </figure>
+                                </div>
+                                <!--END col-6-->
+
+
+
+                                <div class="col-4 designDettagli">
+                                        <button type="button" class="btn_collapse btn_arrow" data-toggle="collapse"
+                                                data-target="#CreaMappa" aria-expanded="false">
+                                                <span> Vedi </span>
+                                        </button>
+
+                                        <div class="collapse" id="CreaMappa">
+
+                                                <p class="text_thesis text_dettagli">
+                                                        A sinistra c'e&#769; il <b>Menu delle operazioni</b> con:
+                                                        <ul class="listMenu">
+                                                                <li class="text_thesis">Add (aggiungi)</li>
+                                                                <li class="text_thesis">Remove (rimuovi)</li>
+                                                                <li class="text_thesis">Load (carica)</li>
+                                                                <li class="text_thesis">Save (salva)</li>
+                                                        </ul>
+                                                </p>
+                                                <p class="text_thesis text_dettagli">
+                                                        Sotto c'e&#769; il <b>Menu degli elementi</b> con gli elementi
+                                                        che
+                                                        possono esser inseriti nella mappa:
+
+                                                        <ul class="listMenu">
+                                                                <li class="text_thesis">Ground (Terreno)</li>
+                                                                <li class="text_thesis">Character (personaggio)</li>
+                                                                <li class="text_thesis">Item (Oggetti)</li>
+                                                                <li class="text_thesis">Weapon (Arma)</li>
+                                                                <li class="text_thesis">Armor (Armature)</li>
+
+                                                        </ul>
+                                                </p>
+
+                                                <p class="text_thesis text_dettagli">
+                                                        Quando si clicca su un oggetto, si aprira&#769; il
+                                                        <b>Menu della descrizione dell'oggetto</b> in alto a destra e si
+                                                        possono inserire le proprieta&#769;.
+
+                                                </p>
+
+
+
+
+                                        </div>
+                                        <!--END CREA MAPPA-->
+                                </div>
+                                <!--END col-4-->
+                        </div>
+                        <!--END ROW CREAZIONE MAPPA-->
+
+
+                        <!---------------------------------------- END CREAZIONE MAPPA ------------------------------------------->
+
+
+                        <!----------------------------------- GAME -------------------------------------->
+                        <div class="row justify-content-center text-center dettagli">
+
+
+                                <div class="col-6 design_IMG">
+                                        <figure class="figure">
+                                                <img src="../images/thesis/game_DM.PNG"
+                                                        class="figure-img img-fluid menu" id="game_img" alt="Menu">
+                                                <figcaption class="figure-caption">Game.</figcaption>
+                                        </figure>
+                                </div>
+                                <!--END col-6-->
+
+                                <div class="col-4 designDettagli">
+                                        <button type="button" class="btn_collapse btn_arrow" data-toggle="collapse"
+                                                data-target="#game" aria-expanded="false">
+                                                <span> Vedi </span>
+                                        </button>
+
+                                        <div class="collapse" id="game">
+
+                                                <p class="text_thesis text_dettagli">
+                                                        Scena del gioco lato DM. E&#769; diversa da quella del PG
+                                                        perche&#769; il DM puo&#769; muovere la visuale del mondo.
+                                                        A sinistra ci sono i bottoni
+
+                                                        -"Next Round", usato per passare il turno al giocatore
+                                                        successivo
+                                                        -"Save World", usato per salvare i dati correnti.
+
+
+                                                </p>
+
+
+
+                                        </div>
+                                        <!--END collapse-->
+                                </div>
+                                <!--END col-4-->
+                        </div>
+                        <!--END ROW GAME-->
+                        <!----------------------------------- END GAME -------------------------------------->
+
+
+
+                        <!----------------------------------- CREATE CHARACTER -------------------------------------->
+                        <div class="row justify-content-center text-center dettagli">
+
+                                <div class="col-6 design_IMG">
+                                        <figure class="figure">
+                                                <img src="../images/thesis/gif/creaP.gif" class="d-block w-100"
+                                                        alt="Gif create character">
+
+                                                <figcaption class="figure-caption">Creazione personaggio.</figcaption>
+                                        </figure>
+                                </div>
+                                <!--END col-6-->
+
+                                <div class="col-4 designDettagli">
+                                        <button type="button" class="btn_collapse btn_arrow" data-toggle="collapse"
+                                                data-target="#createCharacter" aria-expanded="false">
+                                                <span> Vedi </span>
+                                        </button>
+
+                                        <div class="collapse" id="createCharacter">
+
+                                                <p class="text_thesis text_dettagli">
+                                                        Lato PG, se il personaggio non e&#769; stato creato appare la
+                                                        form per la creazione del personaggio, altrimenti viene caricato
+                                                        il personaggio.
+
+
+
+                                                </p>
+
+
+
+                                        </div>
+                                        <!--END collapse-->
+                                </div>
+                                <!--END col-4-->
+
+
+                        </div>
+                        <!--END CREATE CHARACTER-->
+
+                        <!----------------------------------- END CREATE CHARACTER -------------------------------------->
+
+
+                        <!----------------------------------- PARTICLE SYSTEM -------------------------------------->
+                        <div class="row justify-content-center text-center dettagli" id="particleSys">
+
+                                <h3 id="titolo" class="text-center">Particle system</h3>
+
+                                <div class="justify-content-center text-center" id="menuGif">
+                                        <img src="../images/thesis/gif/menuprincipale.gif" class="d-block w-100"
+                                                alt="Gif menu">
+                                </div>
+
+                                <p class="text_thesis">
+
+L'effetto e&#769; stato realizzato con le Particle system di Unity. 
+Le perticelle sono in una regione dello spazio a forma di cono; ognuna ha una diversa distanza e direzione. 
+                                  
+Sotto c'e&#769; un esempio di texture con il risultato ottenuto:
+
+                                </p>
+
+
+
+                                <div class="img-container text-center justify-content-center">
+                                        <figure class="figure fire_img text-center justify-content-center">
+                                                <img src="../images/thesis/fire.png" class="figure-img img-fluid "
+                                                        id="fire_img" alt="Texture fire.">
+                                                <figcaption class="figure-caption">Texure del fuoco.</figcaption>
+                                        </figure>
+
+
+
+                                        <figure class="figure text-center justify-content-center">
+                                                <img src="../images/thesis/es_fire.png" class="figure-img img-fluid "
+                                                        id="esfire_img" alt="ES Texture fire.">
+                                                <figcaption class="figure-caption">Esempio di effetto realizzato con la texture.
+                                                </figcaption>
+                                        </figure>
+                                </div>
+
+                        </div>
+                        <!--END PARTICLE SYSTEM-->
+
+                        <!----------------------------------- END PARTICLE SYSTEM -------------------------------------->
+
+
+                </div>
+                <!--END 4 ROW-->
+
+                <!------------------------------------ END DESIGN ------------------------------------------>
+
+
+
+        </div>
+        <!--END max container-->
+
+
+
+
+
+
+     <!--------------------------------------------------------------- FOOTER ------------------------------------------------------------------------------->
+
+
+     <footer class="page-footer font-small teal animGradient animGradientFooter">
+
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+
+                <div class="row" style="margin-top: 0px !important;">
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 justify-content-center text-center">
+
+                                <!-- Content -->
+                                <h5 id="infoText" class="text-uppercase font-weight-bold">
+                                        INFO</h5>
+
+
+
+                                <div class="row container text-center justify-content-center" id="info">
+
+
+
+
+                                        <button class="accordion_FOOTER">Icons</button>
+                                        <div class="panel_FOOTER">
+                                                Icons made by <a id="linkref"
+                                                        href="https://www.freepik.com/?__hstc=57440181.2867e07fcf4e85ab84dc87c1577d1412.1556288002196.1558001009449.1558047196457.4&__hssc=57440181.4.1558047196457&__hsfp=3189704857"
+                                                        title="Freepik">Freepik</a>
+                                                from
+                                                <a id="linkref" href="https://www.flaticon.com/"
+                                                        title="Flaticon">www.flaticon.com</a>
+                                                is licensed by
+                                                <a id="linkref"
+                                                        href="http://creativecommons.org/licenses/by/3.0/"
+                                                        title="Creative Commons BY 3.0" target="_blank">CC 3.0
+                                                        BY</a>
+                                                <table id="tab_INFO">
+                                                        <tr id="trimg">
+                                                                <th id="thleft"><img id="img_notmine"
+                                                                                src="../images/icon/up-arrow_top.png">
+                                                                </th>
+                                                                <th><img id="img_notmine"
+                                                                                src="../images/icon/download.png">
+                                                                </th>
+                                                        </tr>
+
+
+
+
+                                                        <tr id="trimg">
+                                                                <th id="thleft"><a id="linkref" target="_blank"
+                                                                                href="https://www.flaticon.com/free-icon/up-arrow_64797#term=arrow&page=22&position=58">
+                                                                                Link</a>
+                                                                </th>
+
+                                                                <th><a id="linkref" target="_blank"
+                                                                                href="https://www.flaticon.com/free-icon/download_1784642#term=download&page=2&position=49">
+                                                                                Link</a>
+                                                                </th>
+                                                        </tr>
+                                                </table>
+                                        </div>
+                                </div>
+
+
+
+                        </div>
+                        <!-- Grid column -->
+
+
+
+                        <hr class="clearfix w-100 d-md-none">
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-8 mb-md-0 mb-3">
+
+                                <div class="container text-center justify-content-center">
+                                        <h4 id="contactME">Contact me</h4>
+
+                                        <a id="socialLink" class=""
+                                                href="https://www.facebook.com/maddalena.napolitano"
+                                                target="_blank">
+
+                                                <button class="btn btn-violet btn-circle fa fa-facebook">
+                                                </button>
+                                        </a>
+
+
+
+                                        <a id="socialLink" class=""
+                                                href="https://www.instagram.com/midnight_sun_m/?hl=it"
+                                                target="_blank">
+                                                <button class="btn btn-violet btn-circle fa fa-instagram">
+                                                </button>
+                                        </a>
+
+
+
+
+                                        <a id="socialLink" class="" href="https://github.com/mnapolitano61" target="_blank">
+                                                <button class="btn btn-violet btn-circle fa fa-github-alt">
+                                                </button>
+                                        </a>
+
+                                        <a id="socialLink" class="" href="https://codepen.io/mnapolitano61/" target="_blank">
+                                                <button class="btn btn-violet btn-circle fa fa-codepen">
+                                                </button>
+                                        </a>
+
+
+                                        <button class="btn btn-violet btn-circle" type="button"
+                                                data-toggle="collapse" data-target="#collapseEmail"
+                                                aria-expanded="false" aria-controls="collapseEmail">
+                                                <i class="fa fa-at"></i>
+                                        </button>
+                                        <div class="collapse" id="collapseEmail">
+
+                                                napolitano.maddalena@hotmail.com
+                                        </div>
+
+
+
+
+                                </div>
+                        </div>
+                        <!-- Grid column -->
+
+
+
+
+                </div>
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center justify-content-center">© 2018 Copyright:
+                <a id="linkref" href="https://mdbootstrap.com/education/bootstrap/">
+                        MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+        </div>
+
+</footer>
+
+
+<script>
+        var acc = document.getElementsByClassName("accordion_FOOTER");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active_FOOTER");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                                panel.style.maxHeight = null;
+                        } else {
+                                panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                });
+        }
+</script>
+<!---------------------------------------------------------------END FOOTER -------------------------------------------------------------------->
+
+
+
+
+
+        <!---------------------------------------------------------------BUTTOM TO TOP ---------------------------------------------------------------->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn_top circle">
+                <img class="image_btntop" src="../images/icon/up-arrow_top_4.png">
+        </button>
+
+
+        <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
+
+                function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                document.getElementById("myBtn").style.display = "block";
+                        } else {
+                                document.getElementById("myBtn").style.display = "none";
+                        }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                }
+        </script>
+
+
+
+        <!---------------------------------------------------------------END BUTTOM TO TOP ------------------------------------------------------------>
+
+
+
+
+        <!------------------------------ SCRIPT OVERLAY ------------------------------>
+        <script>
+                function on() {
+                        document.getElementById("overlay").style.display = "block";
+                }
+
+                function off() {
+                        document.getElementById("overlay").style.display = "none";
+                }
+        </script>
+        <!------------------------------ SCRIPT OVERLAY ------------------------------>
+
+
+
+        <!---------------------------------------------------------SCRIPT CARATTERISTICHE------------------------------------------------------->
+
+        <script>
+                function openProperty(evt, cityName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                }
+
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+        </script>
+
+
+
+
+
+        <!--------------------------------------------------------- Optional JavaScript ------------------------------------------------------------------------------------->
+        <!---------------------------------- jQuery first, then Popper.js, then Bootstrap JS ------------------------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
