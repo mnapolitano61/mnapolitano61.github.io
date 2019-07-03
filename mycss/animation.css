@@ -1,0 +1,240 @@
+.back-gradient {
+	height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  padding: 0.5%;
+}
+
+
+.welcome{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 8vw;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.733);
+    width: 100%;
+    height: 80%;
+    background-size: 1000% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.back-gradient,   .welcome {
+	background: linear-gradient(50deg, #660033, #660033, #660033, #ffcc99, #c999ff, #008585, #660033, #660033);
+	background-size: 1000% 600%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: -1% 0;
+    }
+    100% {
+        background-position: 110% 0;
+    }
+    
+}
+
+
+
+
+
+  
+  @-moz-keyframes Gradient {
+    0% {
+        background-position: -1% 0;
+    }
+    100% {
+        background-position: 110% 0;
+    }
+    
+}
+
+
+
+
+
+  @keyframes Gradient {
+    0% {
+        background-position: -1% 0;
+    }
+    100% {
+        background-position: 110% 0;
+    }
+    
+}
+
+
+
+  .cont{
+      background-color: black;
+      width: 100%;
+      height: 100%;
+  }
+
+
+
+
+
+
+  @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+
+  
+    .back-gradient,   .welcome {
+        background: linear-gradient(50deg, #660033, #660033, #660033, #ffcc99, #c999ff, #008585, #660033, #660033);
+        background-size: 1000% 400% !important;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+    
+    }
+
+
+  }
+  
+  
+
+  
+  
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+  
+    .back-gradient{
+        padding: 1%;
+    }
+    
+    .back-gradient,   .welcome {
+        background: linear-gradient(50deg, #660033, #660033, #660033, #ffcc99, #c999ff, #008585, #660033, #660033);
+        background-size: 800% 250% !important;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+    
+    }
+  
+    
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 115% 0;
+        }
+        
+    }
+    
+    
+    
+    
+    
+      
+      @-moz-keyframes Gradient {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 115% 0;
+        }
+        
+    }
+    
+    
+    
+    
+    
+      @keyframes Gradient {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 115% 0;
+        }
+        
+    }
+
+    
+    }
+  
+
+
+
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+  
+    .back-gradient{
+        padding: 2%;
+    }
+    
+    .back-gradient,   .welcome {
+        background: linear-gradient(90deg, #660033, #ffcc99, #c999ff, #008585, #660033);
+        background-size: 800% 200% !important;
+        -webkit-animation: Gradient 12s ease infinite;
+        -moz-animation: Gradient 12s ease infinite;
+        animation: Gradient 12s ease infinite;
+    
+    }
+  
+    
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 115% 0;
+        }
+        
+    }
+    
+    
+    
+    
+    
+      
+      @-moz-keyframes Gradient {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 115% 0;
+        }
+        
+    }
+    
+    
+    
+    
+    
+      @keyframes Gradient {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 115% 0;
+        }
+        
+    }
+
+    
+  
+   
+    
+    }
+  
+  
+    
+
+

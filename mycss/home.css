@@ -1,0 +1,407 @@
+
+*{
+
+  }
+
+  body{
+      padding: 0px;
+  }
+
+
+  #me{
+    box-shadow: 3px 4px 10px 0px rgba(85, 85, 85, 0.281);
+    max-width: 90% !important;
+  }
+
+  .col-md-3{
+      margin-left: 10%;
+      margin-right: 2%;
+
+  }
+  .toolsANDskills{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0 5%;
+    background-color: rgba(255, 255, 255, 0.877);
+    color: black;
+    margin-bottom: 5%;
+          
+    border-style: double;
+    border-color: #000000d8;
+    border-width: 25px;
+  }
+
+
+  #tools{
+     
+      margin-left: 0px;
+      margin-right: 8%;
+      padding-left: 0px;
+  }
+
+
+  #col_skills{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+
+  #txt_skills, #txt_tools{
+
+    margin-bottom: 10%;
+
+  }
+
+
+
+
+
+#UP{
+    margin-top: 0px;
+}
+
+#university_Projects{
+    margin-top: 0px !important;
+}
+
+.progress{
+   background-color: rgba(107, 107, 107, 0.199) !important;
+    height: 2rem !important;
+    margin-bottom: 6%;
+}
+
+
+.progress-bar{
+    font-size: 16px;
+    transition-duration: 0.8s !important;
+    background-color: #660033 !important;
+}
+
+.div_text{
+    align-items: center !important;
+    display: flex ;
+    justify-content: center !important;
+    height: 100%;
+    min-width: 100px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.911);
+
+}
+
+.img-fluid{
+    /*width: 10% !important;*/
+}
+
+#aboutME{
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+#cont_UP{
+    margin-top: 1% !important;
+    width: 90%;
+}
+
+
+
+#skills{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.logoHome{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10% !important;
+    margin-top: 0px; 
+    width: 20% !important;
+}
+
+#logo_Blender, #logo_NerBeans, #logo_CorelDraw{
+    width: 10% !important;
+}
+/************************************************ANIMATIONS**********************************************************/
+
+
+#translate30 {
+    animation-delay: 5s;
+    animation: translateToRight_30 5s forwards.1s;
+   
+}
+
+@keyframes translateToRight_30 {
+    0% {
+        width: 0%;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        width: 15%;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        width: 30%;
+    }
+    
+}
+
+
+
+#translate40 {
+    animation-delay: 5s;
+    animation: translateToRight_40 5s forwards.1s;
+   
+}
+
+@keyframes translateToRight_40 {
+    0% {
+        width: 0%;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        width: 20%;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        width: 40%;
+    }
+    
+}
+
+
+
+#translate60 {
+    animation-delay: 5s;
+    animation: translateToRight_60 5s forwards.1s;
+   
+}
+
+@keyframes translateToRight_60 {
+    0% {
+        width: 0%;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        width: 30%;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        width: 60%;
+    }
+    
+}
+
+
+#translate70 {
+    animation-delay: 5s;
+    animation: translateToRight_70 5s forwards .1s;
+   
+}
+
+@keyframes translateToRight_70 {
+    0% {
+        width: 0%;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        width: 45%;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        width: 70%;
+    }
+    
+}
+
+/************************************************END ANIMATIONS**********************************************************/
+
+
+
+/************************************************ UNIVERSITY'S PROJECT **********************************************/
+
+
+.containerIMG {
+    display: table-cell;
+    position: relative;
+    width: 40%;
+    margin: 4%;
+  }
+  
+  .imageUP {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+
+  .txt1{
+font-size: 19px;
+  }
+
+  .txt2{
+      font-size: 14px;
+      margin-bottom: 30%;
+      color: rgb(192, 192, 192);
+  }
+
+  .middleIMG {
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .bottomIMG{
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .containerIMG:hover  {
+background-color: rgb(0, 72, 75);    
+    
+  }
+  
+
+  .containerIMG:hover .imageUP {
+    opacity: 0.1;
+    
+    
+  }
+  
+  .containerIMG:hover .middleIMG, .containerIMG:hover .bottomIMG {
+    opacity: 1;
+  }
+
+  
+  .textIMG_UP {
+  text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    padding: 5% 20%;
+    
+  }
+  .textIMG_UP:hover{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.884);
+      color: rgb(194, 129, 255);
+      box-shadow: 2px 7px 29px -11px rgb(0, 0, 0);
+      font-size: 18px;
+  }
+
+
+  
+/************************************************ END UNIVERSITY'S PROJECT **********************************************/
+
+
+
+/*******************-------------------------------- RESPONSIVE --------------------------------*******************/
+
+
+@media only screen and (max-width: 1000px) {
+
+
+    .toolsANDskills{
+        padding: 5%;
+        margin-left: 1% !important;
+        margin-right: 1% !important; 
+
+    }
+
+
+    #txt_skills{
+        margin-top: 3%;
+        font-size: 3rem;
+    }
+
+
+    #txt_tools{
+        font-size: 3rem;
+        margin-top: 0px;
+        
+    }
+    #col_skills{
+        flex-basis: auto;
+    }
+
+    
+  #tools{
+  margin-left: 5%;
+        margin-right: 5%;
+}
+
+.progress{
+    height: 3rem !important;
+}
+
+}
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+
+    .containerIMG{
+        margin: 5% 3%;
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1400px) {
+    .txt1{
+        font-size: 16px;
+    }
+
+.txt2{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+
+
+    .col-md-3{
+        margin-left: 2%;
+        margin-right: 2%;
+  
+    }
+
+
+    .container{
+        max-width: 100% !important;
+    }
+
+
+    #me{
+        width: 35%;
+    }
+
+    .containerIMG{
+        width: 85%;
+        margin: 5% 3%;
+    }
+
+    .div_text{
+        font-size: 14px;
+        min-width: 70px;
+        padding: 3% 2%;
+    }
+
+
+    .progress-bar{
+        font-size: 14px;
+    }
+
+}
+
+/*******************-------------------------------- END RESPONSIVE --------------------------------*******************/

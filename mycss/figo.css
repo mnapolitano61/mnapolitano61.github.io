@@ -1,0 +1,119 @@
+.center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-decoration:none;
+  }
+  
+  
+  .a_coolBTN {
+    position:relative;
+    text-decoration:none;
+    max-width:64px;
+    max-height: 64px;
+    text-align:center;
+    line-height:50px;
+    display:inline-block;
+    color:#262626;
+    padding: 5%;
+  }
+  
+  .a_coolBTN:before {
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    width:0;
+    height:0;
+    background:transparent;
+    border:2px solid transparent;
+    border-radius: 5px;
+  }
+  
+  .a_coolBTN:hover:before {
+    text-decoration:none;
+    animation:animate 1s linear forwards;
+  }
+  
+  @keyframes animate {
+    0% 
+    {
+        width:0;
+        height:0;
+        border-top-color: linear-gradient(rgba(1,245,255,1));
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50% 
+    {
+        width:100%;
+        height:0;
+        border-top-color: linear-gradient(rgba(1,245,255,1));
+        border-right-color:  rgb(0, 255, 115);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% 
+    {
+        width:100%;
+        height:100%;
+        border-top-color: linear-gradient(rgba(1,245,255,1), purple);
+        border-right-color:  rgb(47, 0, 255);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+  }
+  
+  .a_coolBTN:after {
+    content:'';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    width:0;
+    height:0;
+    background:transparent;
+    border:2px solid transparent;
+  }
+  
+  
+  .a_coolBTN:hover:after {
+    text-decoration:none;
+    animation:animate2 1s linear forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes animate2 {
+    0% 
+    {
+        width:0;
+        height:0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+    }
+    50% 
+    {
+        width:0;
+        height:100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+    }
+    100% 
+    {
+        width:100%;
+        height:100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+        background-image: linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%), linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%);
+        border-left: 15px solid #3EC8AC;
+    border-right: 15px solid #4E90A4;
+    border-radius: 5px; 
+    }
+  }

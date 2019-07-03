@@ -1,0 +1,1057 @@
+
+
+.max-container{
+    background-color: white !important;
+    color: black;
+    padding-top: 0px !important;
+}
+
+.paddingTOP{
+  padding-top: 5% ;
+}
+.noMarginTop{
+    margin-top: 0px !important;
+}
+
+#myBtn{
+  background-color: #9c587a86;
+}
+
+/************ DROPDOWN ****************/
+
+
+#main{
+  padding: 0px !important;
+}
+#mySidenav_MENU{
+  z-index: -10;
+}
+
+
+
+
+
+/*********** small menu *********/
+
+.sidenav {
+  width: 0px;
+  position: fixed;
+  z-index: 18;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.sidenav a {
+  padding: 4%;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .closebtn:hover {
+  color: #660033 !important;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/************************************------------------ RESPONSIVE ------------------************************************/
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+
+  .sidenav a{
+    font-size: 20px;
+  }
+
+ 
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 900px) {
+
+
+  .sidenav {
+    width: 0px;
+    position: absolute;
+    top: 298px;
+  }
+ 
+
+  .closebtn{
+    padding-top: 0px !important;
+    top: 0px !important;
+  }
+
+  
+
+  .sidenav a {
+    padding: 1% 3%;
+    font-size: 22px;
+    
+  }
+ 
+ 
+
+  
+  #titoloDT {
+    transition: padding-top .5s;
+    
+  }
+
+
+  .paddingTOP {
+    padding-top: 5% ;
+  }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 780px) {
+  .sidenav {
+    top: 294px;
+  }
+
+  #titoloDT {
+    transition: padding-top .5s !important;
+  }
+
+  .paddingTOP {
+    padding-top: 5% ;
+  }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+  .sidenav a{
+    padding: 1%;
+    font-size: 16px;
+  }
+
+  .paddingTOP {
+    padding-top: 5% ;
+  }
+
+
+}
+
+
+
+
+/*********** end small menu **************/
+
+
+
+#titolo{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin: 0px !important;
+    width: 100%;
+  }
+
+  #titoloDesign{
+    padding-bottom: 1%;
+    padding-top: 3%;
+    margin: 0px !important;
+    width: 100%;
+  }
+  .a_Thesis{
+      color: white;
+      text-decoration: none;
+  }
+
+  
+.a_Thesis:hover{
+  text-decoration: none;
+  color: #830f49;
+}
+
+
+
+  .text_thesis{
+    padding: 0px 5%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+
+
+  #logo_C{
+    max-width: 8%;
+    margin: 1% 2%;
+  }
+
+  #logo_Unity, #logo_VisualStudio,
+  #logo_GIMP, #logo_INKSCAPE{
+    max-width: 25%;
+    margin: 5% 10%;
+  }
+
+
+  .t_list{
+    padding: 2%;
+  }
+
+  .t_list li{
+    list-style-type:none;
+    padding: 1%;
+    font-size: 20px;
+  }
+
+
+
+/************************ CAROUSEL ************************/
+.carousel{
+  margin: 5% 10%;
+  box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.75);
+}
+/************************ END CAROUSEL ************************/
+
+
+
+/************************ PROFILE CARD ************************/
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+    max-width: 25%;
+    margin: 1% 8%;
+    text-align: center !important;
+    border-radius: 0px !important;
+    border: none !important;
+  }
+  
+  .nameCard{
+      font-size: 26px;  
+      padding: 5% 1%;
+      color: #000;
+      margin-top: 5%;
+  }
+
+  .titleCard {
+    color: grey;
+    font-size: 18px;
+    padding: 3%;
+    margin-bottom: 0px;
+  }
+  
+
+  .textCard{
+    font-size: 20px;
+    padding: 10%;
+    margin-bottom: 5%;
+  }
+
+
+  .buttonCard {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 3%;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 22px;
+  }
+  
+  .aCard {
+    text-decoration: none;
+    color: black;
+  }
+
+
+  .email-card{
+    background: transparent;
+    border: none;
+  }
+
+  #collapseEmailMN{
+    padding: 2%;
+    padding-bottom: 3%;
+  }
+
+  .aCard:hover{
+    text-decoration: none;
+    color: #660033;
+  }
+  
+  .buttonCard:hover {
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #910249;
+  }
+
+
+  .card_icon{
+    height: 55px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+
+  .fa{
+    margin: 4%;
+    font-size: 24px !important;
+  }
+
+  .fa:hover{
+    margin: 4%;
+    font-size: 30px !important;
+  }
+/************************ END PROFILE CARD ************************/
+
+/************************ DESCRIPTION ************************/
+
+/************************ END DESCRIPTION ************************/
+
+
+/**************************** CARATTERISTICHE ****************************/
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border:none;
+  background-color: transparent;
+  width: 20%;
+  /*height: 300px;*/
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: #694a5a54;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #660033;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 1px 5px 5px #888888d3;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 1% 0px;
+  border: 1px solid #ccc;
+  width: 60%;
+  border-left: none;
+  /*height: 300px;*/
+  box-shadow: 5px 10px 20px #888888a1;
+  margin-left: 3%;
+}
+
+.tabcontent h3{
+  padding: 2%;
+  
+}
+/**************************** END CARATTERISTICHE ****************************/
+
+
+/************************ DESIGN ************************/
+#MenuDM_img, #MenuPG_img, #MenuDescImg{
+  max-width: 80%;
+}
+/***********----------------------- btn dettagli -----------------------**********************/
+
+.btn_arrow {
+
+  text-align: center;
+  font-size: 2vw;
+  padding: 1.5% 3%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(40,9,22,0.89) 30%, rgba(40,9,22,0.8886905103838411) 70%, rgba(5,5,5,1) 100%);
+  box-shadow: 2px 4px 8px -1px rgba(0,0,0,0.75);
+  border-radius: 5px;
+  color: white;
+}
+
+.btn_arrow span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn_arrow span:after {
+  content: '\2193';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn_arrow:hover {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(40,9,22,0.89) 30%, rgba(93,11,46,0.6870098381149334) 50%, rgba(40,9,22,0.8886905103838411) 70%, rgba(5,5,5,1) 100%);
+
+
+}
+.btn_arrow:hover span {
+  padding-right: 25px;
+
+}
+
+.btn_arrow:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/***********----------------------- btn dettagli -----------------------**********************/
+
+.dettagli{
+  margin-top: 10% !important;
+  text-align: center !important;
+  justify-content: center !important;
+  float: center !important;
+  margin-right: 1% !important;
+  margin-left: 1% !important;
+}
+.max-col{
+
+  padding: 0px !important;
+  max-width: 65% !important;
+}
+
+.min-col{
+  padding: 0px !important;
+  max-width: 35% !important;
+}
+
+.btn_collapse{
+  margin-bottom: 1%;
+}
+
+.text_dettagli{
+  transition: 0.3s;
+  padding: 5%;
+}
+/***********----------------------- end btn dettagli -----------------------**********************/
+
+
+
+.listMenu{
+  margin-left: 10%;
+
+}
+
+
+.listMenu li{
+  padding-left: 0px !important;
+}
+
+
+#menuGif{
+  max-width: 70%;
+  margin-bottom: 5%;
+  
+}
+
+
+.img-container{
+  width: 100%;
+  margin-top: 2%;
+}
+
+
+.img-container figure{
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+}
+
+#esfire_img{
+  max-width: 60%;
+}
+
+
+.fire_img{
+    bottom: 0;
+}
+
+
+
+/************************ END DESIGN ************************/
+
+
+
+
+
+/************************************------------------ RESPONSIVE ------------------************************************/
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+
+  .navbar-nav{
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px){
+
+.navbar-nav {
+    width: 75% !important;
+}
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 575px){
+
+  .navbar-nav {
+      width: 90% !important;
+  }
+  
+  }
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1800px) {
+
+/************************ PROFILE CARD ************************/
+
+
+.nameCard{
+    padding: 4% 1%;
+    margin-bottom: 0px;
+}
+
+.titleCard {
+  padding: 5%;
+}
+
+
+
+/************************ END PROFILE CARD ************************/
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+
+/************************ PROFILE CARD ************************/
+
+
+.nameCard{
+    font-size: 22px;  
+    margin-bottom: 0px;
+}
+
+.titleCard {
+  font-size: 16px;
+  padding: 4%;
+}
+
+
+.textCard{
+  font-size: 19px;
+  padding: 2% 5%;
+}
+
+
+
+/************************ END PROFILE CARD ************************/
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+
+  .container{
+    max-width: 90% !important;
+  }
+
+
+
+
+
+/************************ PROFILE CARD ************************/
+
+.card{
+  max-width: 30%;
+}
+
+
+
+.nameCard{
+    font-size: 22px;  
+    margin-bottom: 0px;
+    height: 80px;
+}
+
+.titleCard {
+  font-size: 16px;
+  padding: 5%;
+}
+
+
+.textCard{
+  font-size: 18px;
+}
+
+
+/************************ END PROFILE CARD ************************/
+
+
+
+
+/*********************** DESCRIZIONE ***********************/
+.col-6{
+  /*padding-left: 0px !important;*/
+}
+
+/*********************** END DESCRIZIONE ***********************/
+
+
+
+/*********************** CARATTERISTICHE ***********************/
+.tabcontent{
+  padding: 2%;
+}
+/*********************** END CARATTERISTICHE ***********************/
+
+
+/*********************** DESIGN ***********************/
+
+
+
+/*********************** END DESIGN ***********************/
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+  .container{
+    max-width: 100% !important;
+  }
+
+  .carousel{
+    margin: 5%;
+  }
+
+
+  
+/************************ PROFILE CARD ************************/
+.card {
+  max-width: 35%;
+  margin: 1% 5%;
+}
+
+.nameCard{
+    font-size: 23px;  
+    padding: 4% 1%;
+    margin-bottom: 0px;
+    height: 80px;
+    padding-bottom: 0px;
+}
+
+.titleCard {
+  font-size: 17px;
+  padding: 5%;
+}
+
+
+.textCard{
+  font-size: 19px;
+}
+
+
+.fa{
+  font-size: 20px !important;
+}
+
+.fa:hover{
+  font-size: 24px !important;
+} 
+/************************ END PROFILE CARD ************************/
+  
+
+
+/*********************** DESCRIZIONE ***********************/
+.col-6{
+  padding-left: 0px !important;
+  left: -5%;
+}
+
+
+.col-4{
+  max-width: 40% !important; 
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+
+#logo_C{
+  max-width: 10%;
+  margin: 1% 2%;
+}
+
+#logo_Unity, #logo_VisualStudio,
+#logo_GIMP, #logo_INKSCAPE{
+  max-width: 35%;
+  margin: 5% 6%;
+}
+
+
+/*********************** END DESCRIZIONE ***********************/
+
+
+
+/*********************** CARATTERISTICHE ***********************/
+.tabcontent{
+  padding: 1% 4%;
+}
+
+.tab{
+  width: 30%;
+}
+/*********************** END CARATTERISTICHE ***********************/
+
+
+
+/*********************** DESIGN ***********************/
+
+.design_IMG{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.text_dettagli{
+  font-size: 16px;
+  padding: 5% 0%;
+}
+
+
+.max-col{
+  margin-left: 4%;
+}
+
+.min-col{
+  margin-right: 4%;
+}
+
+
+#menuGif{
+  max-width: 80%;
+}
+/*********************** END DESIGN ***********************/
+  }
+
+
+  
+@media only screen and (min-width: 580px) and (max-width: 768px) {
+
+  .container{
+    max-width: 100% !important;
+  }
+
+  .carousel{
+    margin: 4%;
+  }
+
+  .text_thesis{
+    font-size: 17px;
+  }
+/************************ PROFILE CARD ************************/
+  .card {
+    max-width: 44% !important;
+    margin: 3%;
+  }
+  
+  .nameCard{
+      font-size: 22px;  
+      padding: 4% 2%;
+      margin-bottom: 0px;
+      height: 70px;
+      padding-bottom: 0px;
+  }
+  
+  .titleCard {
+    font-size: 16px;
+    padding: 0% 8%;
+    height: 50px;
+  }
+  
+  
+  .textCard{
+    font-size: 18px;
+  }
+  
+
+  
+   .card_icon{
+      margin-bottom: 5%;
+    }
+
+
+
+    .fa{
+      font-size: 20px !important;
+    }
+    
+    .fa:hover{
+      font-size: 24px !important;
+    }
+  /************************ END PROFILE CARD ************************/
+    
+
+/*********************** DESCRIZIONE ***********************/
+.col-6{
+  flex: none !important;
+  max-width: 100% !important;
+}
+
+
+.col-4{
+  max-width: 100% !important; 
+  flex: none !important;
+}
+
+
+#logo_C{
+  max-width: 10%;
+  margin: 2%;
+}
+
+#logo_Unity, #logo_VisualStudio,
+#logo_GIMP, #logo_INKSCAPE{
+  max-width: 28%;
+  margin: 5% 8%;
+}
+
+/*********************** END DESCRIZIONE ***********************/
+
+
+
+/*********************** CARATTERISTICHE ***********************/
+.tabcontent{
+  padding: 1% 4%;
+}
+
+.tab{
+  width: 30%;
+}
+
+
+.tab button{
+  padding: 20px 15px;
+}
+.tab button.active{
+  font-size: 17px;
+}
+/*********************** END CARATTERISTICHE ***********************/
+
+
+
+/*********************** DESIGN ***********************/
+
+.design_IMG{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.design_IMG{
+  max-width: 90% !important;
+}
+
+.text_dettagli{
+  font-size: 15px;
+  padding: 2% 1%;
+}
+
+.designDettagli{
+  margin-bottom: 5%;
+ }
+
+ 
+#menuGif{
+  max-width: 80%;
+}
+/*********************** END DESIGN ***********************/
+ 
+  
+  }
+
+
+  @media only screen and (min-width: 320px) and (max-width: 580px){ 
+    
+
+    .container{
+      max-width: 100% !important;
+    }
+
+    .carousel{
+      margin: 4%;
+    }
+
+
+.text_thesis{
+  font-size: 16px;
+}
+  /************************ PROFILE CARD ************************/
+ .card{
+   max-width: 70%;
+   margin: 3%;
+ }
+
+ .nameCard{
+   font-size: 21px;
+   height: 80px;
+ }
+    
+
+ .titleCard{
+   font-size: 17px;
+ }
+
+ .textCard{
+   font-size: 19px;
+ }
+
+#collapseEmailMN{
+  font-size: 12px;
+}
+ .fa{
+   font-size: 20px !important;
+ }
+
+ .fa:hover{
+   font-size: 26px !important;
+ }
+ /************************ END PROFILE CARD ************************/
+
+
+
+ /*********************** DESCRIZIONE ***********************/
+.col-6{
+  flex: none !important;
+  max-width: 100% !important;
+}
+
+
+.col-4{
+  max-width: 100% !important; 
+  flex: none !important;
+}
+
+
+#logo_C{
+  max-width: 10%;
+  margin: 2%;
+}
+
+#logo_Unity, #logo_VisualStudio,
+#logo_GIMP, #logo_INKSCAPE{
+  max-width: 25%;
+  margin: 4% 8%;
+}
+/*********************** END DESCRIZIONE ***********************/
+
+
+
+/*********************** CARATTERISTICHE ***********************/
+.tabcontent{
+  padding: 1% 0px;
+  margin-left: 0px;
+}
+
+.tab{
+  width: 38%;
+}
+
+
+.tab button{
+  padding: 20px 15px;
+}
+.tab button.active{
+  font-size: 16px;
+}
+/*********************** END CARATTERISTICHE ***********************/
+
+
+/*********************** DESIGN ***********************/
+
+
+.design_IMG{
+  max-width: 90% !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.text_dettagli{
+  font-size: 14px;  
+  padding: 2% 1%;
+}
+
+.designDettagli{
+  margin-bottom: 5%;
+ }
+
+
+ .listMenu li{
+   padding: 0px !important;
+ }
+
+ #MenuPG_img, #MenuDM_img{
+   max-width: 50%;
+ }
+
+
+/*********************** END DESIGN ***********************/
+ 
+    }
+
+
+    
+
+  /************************************------------------ END RESPONSIVE ------------------************************************/
+
+
+
+  

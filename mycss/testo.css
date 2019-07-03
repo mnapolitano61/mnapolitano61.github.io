@@ -1,0 +1,637 @@
+
+*{
+  
+  font-family: 'Merienda';
+
+}
+
+
+
+
+/*************************************** ANIMATION GRADIENT ************************************************/
+
+.animGradient {
+color: #fff;
+background: linear-gradient(50deg, black, black, #660033, #993333, #ffcc99, #9999ff, #008585, #00004d, black, black );
+background-size: 400% 400%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 10s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: -1% 50%;
+      animation-timing-function: ease-in;
+}
+50% {
+      background-position: 100% ;
+      animation-timing-function: ease-in;
+}
+100% {
+      
+      background-position: 132%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+      background-position: -1% 50%;
+      animation-timing-function: ease-in;
+}
+50% {
+      background-position: 100% ;
+      animation-timing-function: ease-in;
+}
+100% {
+      
+      background-position: 132%
+}
+}
+
+@keyframes Gradient {
+0% {
+      background-position: -3% 50%;
+}
+50% {
+      background-position: 100% ;
+     
+  }
+  
+100% {
+      background-position: 132%;
+}
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .animGradient {
+      background: linear-gradient(50deg, black, black, black, black, #660033, #993333, #ffcc99, #9999ff, #008585, #00004d, black, black, black, black );
+      background-size: 500% 400%;
+      -webkit-animation: Gradient 20s ease infinite;
+      -moz-animation: Gradient 20s ease infinite;
+      animation: Gradient 10s ease infinite;
+  }
+
+
+}
+
+
+
+/*************************************** END ANIMATION GRADIENT ************************************************/
+
+
+
+/*************************************** TEXT INTO ANIMATION GRADIENT ************************************************/
+
+.jumbotron{
+  padding-bottom: 3% !important;
+}
+
+
+.jumbotron span{
+  display: block;
+}
+
+.mytext1{
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s 1;
+
+}
+.mytext2{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  animation: text_2 3s 1;
+}
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -10px;
+
+  }
+  30%{
+    letter-spacing: 30px;
+    margin-bottom: -10px;
+
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -10px;
+
+  }
+}
+
+
+  @keyframes text_2 {
+  0%{
+  margin-top: 1%;
+
+    color: rgba(255, 255, 255, 0);
+    
+    margin-bottom: -20px;
+
+  }
+  30%{
+    letter-spacing: 30px;
+    margin-bottom: -20px;
+
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -20px;
+        color: white;
+
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .jumbotron{
+      padding-bottom: 10% !important;
+    }
+
+
+    .mytext1{
+      font-size: 40px;
+    
+    }
+
+    .mytext2{
+      font-size: 25px;
+      animation: text_2 3s 1;
+    }
+
+    @keyframes text {
+      0%{
+        color: black;
+        margin-bottom: -10px;
+    
+      }
+      30%{
+        letter-spacing: 18px;
+        margin-bottom: -10px;
+    
+      }
+      85%{
+        letter-spacing: 8px;
+        margin-bottom: -10px;
+    
+      }
+    }
+    
+    
+      @keyframes text_2 {
+      0%{
+  
+        color: rgba(255, 255, 255, 0);
+        
+        margin-bottom: -20px;
+    
+      }
+      30%{
+        letter-spacing: 11px;
+        margin-top: 10px;
+        margin-bottom: -20px;
+    
+      }
+      40%{
+        letter-spacing: 8px;
+        margin-top: 10px;
+        margin-bottom: -20px;
+        color: white;
+    
+      }
+    }
+  
+
+    
+
+
+}
+
+/*************************************** END TEXT INTO ANIMATION GRADIENT ************************************************/
+
+
+
+/******************************** MENU *********************************************/
+
+
+/************************* ICON SMALL MENU *********************/
+.container_icon_menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(221, 221, 221);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -7px);
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+/************************* END ICON SMALL MENU *********************/
+
+
+
+.navbar-toggler{
+  border-color: transparent !important;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover{
+  border-color: transparent !important;
+  border: none !important;
+}
+
+
+.navbar{
+  background:#000000ef;
+  margin-bottom: padding-buttom !important;
+  padding: 0px !important;
+}
+
+
+.nav-item{
+  text-align: center !important;
+  font-size: 16px;
+  padding-top: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+
+.aboutME{
+  min-width: 106px;
+}
+
+
+.contactME{
+  min-width: 116px;
+}
+
+.nav-link{
+  transition:0.2s;
+  color: white !important;
+  text-align: center;
+}
+
+
+.nav-item::after{
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2.5px;
+  background:  #99004d;
+  transition: 0.2s;
+}
+
+.nav-item:hover::after{width:100%;}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+  color: #99004d !important;
+}
+
+.dropdown-menu{
+  background-color: #000000ef !important;
+  top: 95% !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+}
+
+
+.dropdown-item{
+  color: white !important;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  color:#cc99ff !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+  background:#99004d !important;
+  color: white;
+}
+
+/******************************************* END MENU *********************************************/
+
+
+
+/******************************************** MENU DROPDOWN ******************************************/
+
+
+
+
+
+
+/******************************************** END MENU DROPDOWN ******************************************/
+
+
+
+
+
+
+.progress{
+ 
+  height: 25px !important;
+  margin-bottom: 3%;
+}
+
+.div_text{
+  align-items: center !important;
+  display: flex ;
+  justify-content: center !important;
+  height: 100%;
+  min-width: 60px;
+  padding: 10px;
+}
+
+.img-fluid{
+  width: 10% !important;
+}
+
+.cn_tools{
+  align-items: center !important;
+  display: flex ;
+  justify-content: center !important;
+  height: 100%;
+  min-width: 60px;
+  padding: 10px;
+}
+
+
+.pictureContainer img {
+  position: relative;
+  top: 0px;
+  transition: transform .2s ease-in-out;
+}
+
+.pictureContainer img:hover {
+  transform: translate3d(0px, -150px, 0px);
+}
+
+
+.margin10{
+  margin: 10%;
+  
+}
+
+
+
+
+
+
+/************************************************ANIMATIONS**********************************************************/
+#imageMove {
+  animation: translate 2s infinite;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+
+@keyframes translate {
+  0% {
+      transform: translate3d(0px, 0px, 0px);
+      animation-timing-function: ease-in;
+  }
+  50% {
+      transform: translate3d(20px, 40px, 0px);
+      animation-timing-function: ease-out;
+  }
+  100% {
+      transform: translate3d(0px, 0px, 0px);
+  }
+  
+}
+
+#translate30 {
+  animation-delay: 2s;
+  animation: translateToRight_30 2s forwards.1s;
+ 
+}
+
+@keyframes translateToRight_30 {
+  0% {
+      width: 0%;
+      animation-timing-function: ease-in;
+  }
+  50% {
+      width: 15%;
+      animation-timing-function: ease-out;
+  }
+  100% {
+      width: 30%;
+  }
+  
+}
+
+
+
+#translate40 {
+  animation-delay: 2s;
+  animation: translateToRight_40 2s forwards.1s;
+ 
+}
+
+@keyframes translateToRight_40 {
+  0% {
+      width: 0%;
+      animation-timing-function: ease-in;
+  }
+  50% {
+      width: 20%;
+      animation-timing-function: ease-out;
+  }
+  100% {
+      width: 40%;
+  }
+  
+}
+
+
+
+#translate60 {
+  animation-delay: 2s;
+  animation: translateToRight_60 2s forwards.1s;
+ 
+}
+
+@keyframes translateToRight_60 {
+  0% {
+      width: 0%;
+      animation-timing-function: ease-in;
+  }
+  50% {
+      width: 30%;
+      animation-timing-function: ease-out;
+  }
+  100% {
+      width: 60%;
+  }
+  
+}
+
+
+#translate70 {
+  animation-delay: 2s;
+  animation: translateToRight_70 2s forwards .1s;
+ 
+}
+
+@keyframes translateToRight_70 {
+  0% {
+      width: 0%;
+      animation-timing-function: ease-in;
+  }
+  50% {
+      width: 45%;
+      animation-timing-function: ease-out;
+  }
+  100% {
+      width: 70%;
+  }
+  
+}
+
+/************************************************END ANIMATIONS**********************************************************/
+
+
+
+/**************************************************BUTTOM TO TOP*********************************************/
+.circle {
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  
+}
+
+.circle::before,
+.circle::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+
+.circle,
+.circle::before,
+.circle::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.circle {
+  position: relative;
+  z-index: 2;
+  /*background-color: rgb(114, 7, 255);*/
+  border: 2px solid #030303;
+  color: #000000;
+  overflow: hidden;
+}
+
+.circle:hover {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.651);
+}
+
+.circle::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  
+}
+
+.circle:hover::after {
+  background: rgba(255, 255, 255, 0.651);
+  border-radius: 50%;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  
+}
+
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.404);
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 100px;
+  padding: 1% !important;
+  animation: btn_TOP 2s ease infinite;
+}
+
+
+
+
+
+.image_btntop{
+  align-content: center !important;
+  width: 30px;
+  height: 30px;
+}
+
+
+@keyframes btn_TOP {
+  0% {
+      transform: translateY(0px);
+      animation-timing-function: ease-in;
+  }
+  50% {
+      transform: translateY(-30px);
+      animation-timing-function: ease-in;
+  }
+  80% {
+      transform: translateY(-15px);
+      animation-timing-function: ease-out;
+  }
+  100%{
+      transform: translateY(0px);
+  }
+  
+}
+
+
+
+
+/**************************************************END BUTTOM TO TOP*********************************************/
+
